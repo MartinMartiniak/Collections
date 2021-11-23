@@ -18,7 +18,7 @@ public class Main {
         Array1.add(1);
         Array1.add(0);
 
-        multiplyByLength.multipList(Array1); //don't mind the pun :D
+        multiplyByLength.multipList(Array1); //don't mind the pun :D multip(ly/Li)st haha get it?
     }
     interface MultiplyByLength{
       void multipList(List<Integer> list);
