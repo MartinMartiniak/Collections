@@ -5,9 +5,11 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        GetWholeBudget getWholeBudget = (List<People> peopleList) -> {
-            Integer budget = peopleList.stream().map(People::getBudget);
-            System.out.println(budget);
+        ContainsA containsA = (List<People> peopleList) ->{
+
+            boolean result = peopleList.stream()
+                    .anyMatch(e -> e.getName().contains("a"));
+            System.out.println(result);
         };
         People person1 = new People("John", 21, 23000 );
         People person2 = new People("Steve", 32, 40000);
@@ -19,10 +21,12 @@ public class Main {
         peopleList.add(person2);
         peopleList.add(person3);
 
-        getWholeBudget.wholeBudget(peopleList);
+        containsA.conA(peopleList);
+
+
     }
-    interface GetWholeBudget{
-        void wholeBudget(List<People> personList);
+    interface ContainsA{
+        void conA(List<People> personList);
     }
 }
 class People {
@@ -39,7 +43,7 @@ class People {
         return name;
     }
 
-    public Integer getBudget() {
+    public int getBudget() {
         return budget;
     }
 
