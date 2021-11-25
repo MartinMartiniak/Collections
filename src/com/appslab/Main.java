@@ -13,6 +13,7 @@ public class Main {
             listOfEmployees.add(new Programmer(1700,200));
             listOfEmployees.add(new Driver(1000,250));
 
-            listOfEmployees.forEach(Employee::getInfo);
+            EmployeeInterfaceImpl.totalSalary(listOfEmployees);
+            EmployeeInterfaceImpl.totalBonus(listOfEmployees);
         }
     }
