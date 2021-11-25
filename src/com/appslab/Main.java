@@ -1,12 +1,13 @@
 package com.appslab;
-
+import java.util.*;
 public class Main {
 
         public static void main(String[] args) {
-            Teacher teacher = new Teacher(900,300);
-            Programmer programmer = new Programmer(1700,200);
+            ArrayList<Employee> listOfEmployees = new ArrayList<>();
+            listOfEmployees.add(new Teacher(900,300));
+            listOfEmployees.add(new Programmer(1700,200));
+            listOfEmployees.add(new Driver(1000,250));
 
-            teacher.getInfo();
-            programmer.getInfo();
+            listOfEmployees.forEach(Employee::getInfo);
         }
     }
