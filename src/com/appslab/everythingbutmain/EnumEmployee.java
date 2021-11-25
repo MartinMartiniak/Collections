@@ -1,4 +1,4 @@
-package com.appslab;
+package com.appslab.everythingbutmain;
 
 public enum EnumEmployee {
     TEACHER, PROGRAMMER, DRIVER

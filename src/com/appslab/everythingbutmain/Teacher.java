@@ -1,5 +1,8 @@
-package com.appslab;
+package com.appslab.everythingbutmain;
 
+
+import com.appslab.everythingbutmain.Employee;
+import com.appslab.everythingbutmain.EnumEmployee;
 
 public class Teacher extends Employee {
 

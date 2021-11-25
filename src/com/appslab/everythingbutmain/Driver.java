@@ -1,4 +1,4 @@
-package com.appslab;
+package com.appslab.everythingbutmain;
 
 public class Driver extends Employee {
 
