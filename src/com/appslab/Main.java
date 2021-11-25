@@ -6,3 +6,4 @@ public class Main {
         System.out.println("Hello AppsLab 2020! haa");
     }
 }
+//je commitnuté v inheritance4 lebo som si zabudol vytvoriť tento branch predtým než som začal pracovať -.-
